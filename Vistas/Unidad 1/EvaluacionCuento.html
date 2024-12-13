@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Actividad</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" type="text/css" href="../../CSS/Lib/bootstrap.v.4.6.2.min.css">
+	<link rel="stylesheet" type="text/css" href="../../CSS/Iconos-v1.0/style.css">
+    <link rel="shortcut icon" href="../../Multimedia/Iconos/M.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../..CSS/Estilos/EstilosGenerales.css">
+
+	<script type="text/javascript" src="../../JS/Lib/jqueryv3.5.1.min.js"></script>
+	<script type="text/javascript" src="../../JS/Lib/bootstrap.v.4.6.2.min.js"></script>
+	<script type="text/javascript" src="../../JS/Logica/navActividades.js"></script>
+    <script type="text/javascript" src="../../JS/Logica/Actividad1cuento.js"></script>
+    <script type="text/javascript" src="../../JS/Logica/FooterLog.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+            <a class="navbar-brand" href="#">
+                <img src="../../Multimedia/Iconos/Micono2.png" width="30" height="30" class="d-inline-block aling-top" alt="">
+                Aprende con Mambrú
+            </a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul id="navLogica" class="navbar-nav">
+
+				</ul>
+			</div>
+		</nav>
+    </header>
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-12 alert alert-info">
+                <h3>Actividad</h3>
+                <p><span class="icon-info-with-circle"></span> Responde las preguntas de la evaluación</p>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <strong>Actividad evaluativa</strong>
+                <ol>
+                    <li>
+                        <p>¿Qué es el cuento?</p>
+                        <p><input type="radio" id="preg1A1R1" name="preg1"><label for="preg1A1R1">Narraciones con personajes ficticios</label></p>
+                        <p><input type="radio" id="preg1A1R2" name="preg1"><label for="preg1A1R2">Narración corta de hechos imaginarios o reales</label></p>
+                        <p><input type="radio" id="preg1A1R3" name="preg1"><label for="preg1A1R3">Narraciones cortas de fantásticos</label></p>
+                    </li>
+                    <li>
+                        <p>¿Quiénes son los personajes?</p>
+                        <p><input type="radio" id="prg2A1R1" name="preg2"><label for="prg2A1R1">Ejecutan las acciones</label></p>
+                        <p><input type="radio" id="prg2A1R2" name="preg2"><label for="prg2A1R2">Persona que cuenta el relato</label></p>
+                        <p><input type="radio" id="prg2A1R3" name="preg2"><label for="prg2A1R3">Voz creada por el autor</label></p>
+                    </li>
+                    <li>
+                        <p>Dentro del cuento encontramos personajes: </p>
+                        <p><input type="radio" id="preg3A1R1" name="preg3"><label for="preg3A1R1">Primarios y secundarios</label></p>
+                        <p><input type="radio" id="preg3A1R2" name="preg3"><label for="preg3A1R2">Ficticios</label></p>
+                        <p><input type="radio" id="preg3A1R3" name="preg3"><label for="preg3A1R3">Todas la anteriores</label></p>
+                    </li>
+                    <li>
+                        <p>¿Cuáles son las partes del cuento?</p>
+                        <p><input type="radio" id="preg4A1R1" name="preg4"><label for="preg4A1R1">Ejercicios</label></p>
+                        <p><input type="radio" id="preg4A1R2" name="preg4"><label for="preg4A1R2">Instrucciones</label></p>
+                        <p><input type="radio" id="preg4A1R3" name="preg4"><label for="preg4A1R3">Inicio, desarrollo y final</label></p>
+                    </li>
+                </ol>
+                <button class="btn btn-info" role="button" onclick="validarRadio()">Evaluar</button>
+            </div>
+            <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12 col-xs-12">
+                <!--Inicio carousel-->
+                <div id="carousel" class="carousel slide w-100" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li class="active" data-target="carousel" data-slide-to="0"></li>
+                        <li data-target="carousel" data-slide="1"></li>
+                        <li data-target="carousel" data-slide="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="w-100 rounded" src="../../Multimedia/ImgU1/niñosleyendo.jpg" alt="Imagen no encontrada" width="250px" height="300px">
+                           
+                        </div>
+                        <div class="carousel-item">
+                            <img class="w-100 rounded" src="../../Multimedia/ImgU1/infantil.jpg" alt="Imagen no encontrada" width="250px" height="300px">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="w-100 rounded" src="../../Multimedia/ImgU1/study.jpg" alt="Imagen no encontrada" width="250px" height="300px">
+                            
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-target="#carousel" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-target="#carousel" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                    </button>
+                </div> <!--Fin carousel-->
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <h2 class="text-center">¡Felicidades!!</h2>
+                    <figure class="figure-center">
+                        <img src="../../Multimedia/Index/Mambrú1.png" class="float-right " width="100" height="100" alt="Imagen no encontrada">
+                    </figure>
+                    <strong>¡Amigoo!!</strong> <br>
+                    Gracias por llegar al final de esta primera etapa, continua por el sendero de esta aventura disfrutando y aprendiendo con Mambrú. <br>
+                    Nos vemos en otra ocasión. 
+                </div>
+            </div>
+          
+        </div>    
+    </section>
+    <section id="section-auxiliar">
+
+    </section>
+    <footer>
+        <section id="piePagina" class="col-12 text-center">
+			
+		</section>
+    </footer>
+</body>
+</html>

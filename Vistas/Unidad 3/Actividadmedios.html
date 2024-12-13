@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Actividad Medios de Comunicación</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" type="text/css" href="../../CSS/Lib/bootstrap.v.4.6.2.min.css">
+	<link rel="stylesheet" type="text/css" href="../../CSS/Iconos-v1.0/style.css">
+    <link rel="shortcut icon" href="../../Multimedia/Iconos/M.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../..CSS/Estilos/EstilosGenerales.css">
+
+	<script type="text/javascript" src="../../JS/Lib/jqueryv3.5.1.min.js"></script>
+	<script type="text/javascript" src="../../JS/Lib/bootstrap.v.4.6.2.min.js"></script>
+	<script type="text/javascript" src="../../JS/Logica/navActividades.js"></script>
+    <script type="text/javascript" src="../../JS/Logica/FooterLog.js"></script>
+    <script type="text/javascript" src="../../JS/Logica/ActividadRMC.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+            <a class="navbar-brand" href="../../Index.html">
+                <img src="../../Multimedia/Iconos/Micono2.png" width="30" height="30" class="d-inline-block aling-top" alt="">
+                Aprende con Mambrú
+            </a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul id="navLogica" class="navbar-nav">
+
+				</ul>
+			</div>
+		</nav>
+    </header>
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-12 alert alert-info">
+                <h3>Actividades de Refuerzo</h3>
+                <p>Actividad 1</p>
+                <p><span class="icon-info-with-circle"></span>Nombra según corresponda</p>
+                <p>Actividad 2</p>
+                <p><span class="icon-info-with-circle"></span>Responde las preguntas</p>
+            </div>
+            <div class="col-lg-4 col-xl-4 col-md-4 col-sm-4 col-xs-4">
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <img src="../../Multimedia/ImgU3/TVAc.jpg" height="200" width="200" alt="Imágen Televisor">
+                    <p>
+                        <input type="text" name="preg1" id="Pregunta1">
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-xl-4 col-md-4 col-sm-4 col-xs-4">
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <img src="../../Multimedia/ImgU3/CartaAc.jpg" height="200" width="200" alt="Imágen Carta">
+                    <p>
+                        <input type="text" name="preg2" id="Pregunta2">
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-xl-4 col-md-4 col-sm-4 col-xs-4">
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <img src="../../Multimedia/ImgU3/RadioAc.jpg" height="200" width="200" alt="Imágen Radio">
+                    <p>
+                        <input type="text" name="preg3" id="Pregunta3">
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-xl-4 col-md-4 col-sm-4 col-xs-4">
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <img src="../../Multimedia/ImgU3/CelularAc.jpg" height="200" width="200" alt="Imágen Radio">
+                    <p>
+                        <input type="text" name="preg4" id="Pregunta4">
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-xl-4 col-md-4 col-sm-4 col-xs-4">
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <img src="../../Multimedia/ImgU3/PeriodicoAc.jpg" height="200" width="200" alt="Imágen Radio">
+                    <p>
+                        <input type="text" name="preg5" id="Pregunta5">
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-xl-4 col-md-4 col-sm-4 col-xs-4">
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <img src="../../Multimedia/ImgU3/TelefonoAc.jpg" height="200" width="200" alt="Imágen Radio">
+                    <p>
+                        <input type="text" name="preg6" id="Pregunta6">
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 text-center">
+                <button class="btn btn-info" role="button" onclick="ValidarText()">Validar</button>
+            </div>
+            <div class="col-lg-4 col-xl-4 col-md-4 col-sm-4 col-xs-4">
+                <ol>
+                        1. ¿Cuáles son algunos ejemplos de medios de comunicación?
+                        <p><input type="radio" id="preg1A1U3R1" name="pregunta1"><label for="preg1A1U3R1">Teléfono</label></p>
+                        <p><input type="radio" id="preg1A1U3R2" name="pregunta1"><label for="preg1A1U3R2">Cartas</label></p>
+                        <p><input type="radio" id="preg1A1U3R3" name="pregunta1"><label for="preg1A1U3R3">Internet</label></p>
+                        <p><input type="radio" id="preg1A1U3R4" name="pregunta1"><label for="preg1A1U3R4">Todos los anteriores</label></p>
+    
+                    
+                </ol>
+            </div>
+            <div class="col-lg-4 col-xl-4 col-md-4 col-sm-4 col-xs-4">
+                <ol>
+                        2. ¿Qué es la televisión?
+                        <p><input type="radio" id="preg2A1U3R1" name="pregunta2"><label for="preg2A1U3R1">Una forma de comunicarse con extraterrestres</label></p>
+                        <p><input type="radio" id="preg2A1U3R2" name="pregunta2"><label for="preg2A1U3R2">Un dispositivo que muestra imágenes y sonidos</label></p>
+                        <p><input type="radio" id="preg2A1U3R3" name="pregunta2"><label for="preg2A1U3R3">Una máquina para hacer ejercicio</label></p>
+                        <p><input type="radio" id="preg2A1U3R4" name="pregunta2"><label for="preg2A1U3R4">Todas los anteriores</label></p>
+
+                </ol>
+            </div>
+            <div class="col-lg-4 col-xl-4 col-md-4 col-sm-4 col-xs-4">
+                <ol>
+                        3. ¿Qué es un periódico?
+                        <p><input type="radio" id="preg3A1U3R1" name="pregunta3"><label for="preg3A1U3R1">Un objeto que se usa para jugar al fútbol</label></p>
+                        <p><input type="radio" id="preg3A1U3R2" name="pregunta3"><label for="preg3A1U3R2">Un lugar donde se venden juguetes</label></p>
+                        <p><input type="radio" id="preg3A1U3R3" name="pregunta3"><label for="preg3A1U3R3">Un medio impreso que contiene noticias</label></p>
+                        <p><input type="radio" id="preg3A1U3R4" name="pregunta3"><label for="preg3A1U3R4">Ninguna de las anteriores</label></p>
+                </ol>
+            </div>
+            <div class="col-lg-4 col-xl-4 col-md-4 col-sm-4 col-xs-4">
+                <ol>
+                        4. ¿Qué es Internet?
+                        <p><input type="radio" id="preg4A1U3R1" name="pregunta4"><label for="preg4A1U3R1">Un tipo de pez muy grande</label></p>
+                        <p><input type="radio" id="preg4A1U3R2" name="pregunta4"><label for="preg4A1U3R2">Una red que permite la comunicación</label></p>
+                        <p><input type="radio" id="preg4A1U3R3" name="pregunta4"><label for="preg4A1U3R3">Un juego de mesa muy divertido</label></p>
+                        <p><input type="radio" id="preg4A1U3R4" name="pregunta4"><label for="preg4A1U3R4">Todas las anteriores</label></p>
+                </ol>
+            </div>
+            <div class="col-lg-4 col-xl-4 col-md-4 col-sm-4 col-xs-4">
+                <ol>
+                        5. ¿Qué es un mensaje de texto?
+                        <p><input type="radio" id="preg5A1U3R1" name="pregunta5"><label for="preg5A1U3R1">Mensaje que se escribe en un papel y se envía por correo</label></p>
+                        <p><input type="radio" id="preg5A1U3R2" name="pregunta5"><label for="preg5A1U3R2">Forma de comunicación escrita que se envía a través del celular</label></p>
+                        <p><input type="radio" id="preg5A1U3R3" name="pregunta5"><label for="preg5A1U3R3">Una canción que se envía por radio</label></p>
+                        <p><input type="radio" id="preg5A1U3R4" name="pregunta5"><label for="preg5A1U3R4">Ninguna de las anteriores</label></p>
+                </ol>
+            </div>
+            <div class="col-lg-4 col-xl-4 col-md-4 col-sm-4 col-xs-4">
+                <ol>
+                        6. ¿Qué es una emisora de radio?
+                        <p><input type="radio" id="preg6A1U3R1" name="pregunta6"><label for="preg6A1U3R1">Un lugar donde se fabrican juguetes de radiocontrol</label></p>
+                        <p><input type="radio" id="preg6A1U3R2" name="pregunta6"><label for="preg6A1U3R2">Un dispositivo para escuchar música en el baño</label></p>
+                        <p><input type="radio" id="preg6A1U3R3" name="pregunta6"><label for="preg6A1U3R3">Estación que transmite programas y música a través de ondas de radio</label></p>
+                        <p><input type="radio" id="preg6A1U3R4" name="pregunta6"><label for="preg6A1U3R4">Ninguna de las anteriores</label></p>
+                </ol>
+            </div>
+            <div class="col-12 text-center">
+                <button class="btn btn-info" role="button" onclick="ValidarRadio()">Validar</button>
+                <a class="btn btn-info" role="button" href="../../Vistas/Unidad 3/EvaluacionM.html">Evaluación</a>
+            </div>
+        </div>
+        
+    </section>
+    <section id="section-auxiliar"></section>
+    <footer>
+        <section id="piePagina" class="col-12 text-center">
+			
+		</section>
+    </footer>
+</body>
+</html>

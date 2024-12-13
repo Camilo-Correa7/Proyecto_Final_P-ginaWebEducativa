@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Actividad Refuerzo</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" type="text/css" href="../../CSS/Lib/bootstrap.v.4.6.2.min.css">
+	<link rel="stylesheet" type="text/css" href="../../CSS/Iconos-v1.0/style.css">
+    <link rel="shortcut icon" href="../../Multimedia/Iconos/M.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../..CSS/Estilos/EstilosGenerales.css">
+
+	<script type="text/javascript" src="../../JS/Lib/jqueryv3.5.1.min.js"></script>
+	<script type="text/javascript" src="../../JS/Lib/bootstrap.v.4.6.2.min.js"></script>
+	<script type="text/javascript" src="../../JS/Logica/navActividades.js"></script>
+    <script type="text/javascript" src="../../JS/Logica/Unidad2Actividad2.js"></script>
+    <script type="text/javascript" src="../../JS/Logica/FooterLog.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+            <a class="navbar-brand" href="#">
+                <img src="../../Multimedia/Iconos/Micono2.png" width="30" height="30" class="d-inline-block aling-top" alt="">
+                Aprende con Mambrú
+            </a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul id="navLogica" class="navbar-nav">
+
+				</ul>
+			</div>
+		</nav>
+    </header>
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-12 alert alert-info">
+                <h3>Actividad de Refuerzo</h3>
+                <p><span class="icon-info-with-circle"></span> Responde las siguientes preguntas</p>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <strong>Actividad 1</strong>
+                <ol>
+                    <li>
+                        <p>¿Son las palabras que se refieren; es decir nombran a las personas, animales, objetos, plantas, sentimientos, etc.?</p>
+                        <p><input type="radio" id="preg1A1U2R1" name="preg1"><label for="preg1A1U2R1">El verbo</label></p>
+                        <p><input type="radio" id="preg1A1U2R2" name="preg1"><label for="preg1A1U2R2">El sustantivo</label></p>
+                        <p><input type="radio" id="preg1A1U2R3" name="preg1"><label for="preg1A1U2R3">El adjetivo</label></p>
+                    </li>
+                    <li>
+                        <p>Se utilizan para nombrar en forma particular a un ser que generalmente pertenece a una determinada especie.</p>
+                        <p><input type="radio" id="prg2A1U2R1" name="preg2"><label for="prg2A1U2R1">Sustantivos individuales</label></p>
+                        <p><input type="radio" id="prg2A1U2R2" name="preg2"><label for="prg2A1U2R2">Sustantivos colectivos</label></p>
+                        <p><input type="radio" id="prg2A1U2R3" name="preg2"><label for="prg2A1U2R3">Sustantivos abstractos</label></p>
+                    </li>
+                    <li>
+                        <p>Los sustantivos 	como arroyo, tráfico y color son ejemplos de: </p>
+                        <p><input type="radio" id="preg3A1U2R1" name="preg3"><label for="preg3A1U2R1">Sustantivos comunes</label></p>
+                        <p><input type="radio" id="preg3A1U2R2" name="preg3"><label for="preg3A1U2R2">Sustantivos compuestos</label></p>
+                        <p><input type="radio" id="preg3A1U2R3" name="preg3"><label for="preg3A1U2R3">Sustantivos propios</label></p>
+                    </li>
+                    <li>
+                        <p>Nombran a seres que engloban o agrupan a otros seres de una misma especie.</p>
+                        <p><input type="radio" id="preg4A1U2R1" name="preg4"><label for="preg4A1U2R1">Sustantivos individuales</label></p>
+                        <p><input type="radio" id="preg4A1U2R2" name="preg4"><label for="preg4A1U2R2">Sustantivos concretos</label></p>
+                        <p><input type="radio" id="preg4A1U2R3" name="preg4"><label for="preg4A1U2R3">Sustantivos colectivos</label></p>
+                    </li>
+                </ol>
+                <button class="btn btn-info" role="button" onclick="ValidarRadio()">Validar</button>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <strong>Actividad 2</strong>
+                <div class="row">
+                    <div class="col-3 text-center alert alert-info">
+                        <p style="color: black;">Personas</p>
+                        <div id="SoltarPA" class="alert alert-danger" style="height: 200px;" ondrop="SoltarObjetos(event)" ondragover="mientrasArrastroB(event)"></div>
+                    </div>
+                    <div class="col-3 text-center alert alert-info">
+                        <p style="color: black;">Cosa</p>
+                        <div id="SoltarPB" class="alert alert-primary" style="height: 200px;" ondrop="SoltarObjetos(event)" ondragover="mientrasArrastroB(event)"></div>
+                    </div>
+                    <div class="col-3 text-center alert alert-info">
+                        <p style="color: black;">Animal</p>
+                        <div id="SoltarPC" class="alert alert-warning" style="height: 200px;" ondrop="SoltarObjetos(event)" ondragover="mientrasArrastroB(event)"></div>
+                    </div>
+                    <div class="col-3 text-center alert alert-info">
+                        <p style="color: black;">Lugar</p>
+                        <div id="SoltarPD" class="alert alert-success" style="height: 200px;" ondrop="SoltarObjetos(event)" ondragover="mientrasArrastroB(event)"></div>
+                    </div>
+                    <div class="col-12 alert alert-warning">
+                        <div id="ListaElementos" class="text-center" style="height: 100px;">
+                            <p id="arrastrarT01" class="float-left" draggable="true" ondragstart="MoverObjetos(event)" style="color: black; font-family:Arial; font-size:18px;">
+                                profesor &nbsp;
+                            </p>
+                            <p id="arrastrarT02" class="float-left" draggable="true" ondragstart="MoverObjetos(event)" style="color:black; font-family:Arial; font-size:18px;">
+                                piscina &nbsp;
+                            </p>
+                            <p id="arrastrarT03" class="float-left" draggable="true" ondragstart="MoverObjetos(event)" style="color:black; font-family:Arial; font-size:18px;">
+                                galletas &nbsp;
+                            </p>
+                            <p id="arrastrarT04" class="float-left" draggable="true" ondragstart="MoverObjetos(event)" style="color:black; font-family:Arial; font-size:18px;">
+                                Colombia &nbsp;
+                            </p>
+                            <p id="arrastrarT05" class="float-left" draggable="true" ondragstart="MoverObjetos(event)" style="color: black; font-family:Arial; font-size:18px;">
+                                lápiz &nbsp;
+                            </p>
+                            <p id="arrastrarT06" class="float-left" draggable="true" ondragstart="MoverObjetos(event)" style="color: black; font-family:Arial; font-size:18px;">
+                                gato &nbsp;
+                            </p>
+                            <p id="arrastrarT07" class="float-left" draggable="true" ondragstart="MoverObjetos(event)" style="color: black; font-family:Arial; font-size:18px;">
+                                león &nbsp;
+                            </p>
+                            <p id="arrastrarT08" class="float-left" draggable="true" ondragstart="MoverObjetos(event)" style="color: black; font-family:Arial; font-size:18px;">
+                                Anita &nbsp;
+                            </p>
+                            <p id="arrastrarT09" class="float-left" draggable="true" ondragstart="MoverObjetos(event)" style="color: black; font-family:Arial; font-size:18px;">
+                                celular &nbsp;
+                            </p>
+                            <p id="arrastrarT10" class="float-left" draggable="true" ondragstart="MoverObjetos(event)" style="color: black; font-family:Arial; font-size:18px;">
+                                jardín &nbsp;
+                            </p>
+                            <p id="arrastrarT11" class="float-left" draggable="true" ondragstart="MoverObjetos(event)" style="color: black; font-family:Arial; font-size:18px;">
+                                abeja &nbsp;
+                            </p>
+                            <p id="arrastrarT12" class="float-left" draggable="true" ondragstart="MoverObjetos(event)" style="color: black; font-family:Arial; font-size:18px;">
+                                abuela &nbsp;
+                            </p>
+                        </div>
+                    </div>
+                    <button class="btn btn-info" role="button" onclick=" Validar()">Validar</button> &nbsp;
+                    <a href="../../Vistas/Unidad 2/ActividadEvaU2.html" class="btn btn-info" role="button" aria-disabled="true">Evaluación</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section-auxiliar"></section>
+    <footer>
+        <section id="piePagina" class="col-12 text-center">
+			
+		</section>
+    </footer>
+</body>
+</html>

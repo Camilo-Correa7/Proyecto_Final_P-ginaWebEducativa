@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Actividad Cuento</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" type="text/css" href="../../CSS/Lib/bootstrap.v.4.6.2.min.css">
+	<link rel="stylesheet" type="text/css" href="../../CSS/Iconos-v1.0/style.css">
+    <link rel="shortcut icon" href="../../Multimedia/Iconos/M.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../..CSS/Estilos/EstilosGenerales.css">
+
+	<script type="text/javascript" src="../../JS/Lib/jqueryv3.5.1.min.js"></script>
+	<script type="text/javascript" src="../../JS/Lib/bootstrap.v.4.6.2.min.js"></script>
+	<script type="text/javascript" src="../../JS/Logica/navActividades.js"></script>
+    <script type="text/javascript" src="../../JS/Logica/Actividad1cuento.js"></script>
+    <script type="text/javascript" src="../../JS/Logica/FooterLog.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+            <a class="navbar-brand" href="#">
+                <img src="../../Multimedia/Iconos/Micono2.png" width="30" height="30" class="d-inline-block aling-top" alt="">
+                Aprende con Mambrú
+            </a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul id="navLogica" class="navbar-nav">
+
+				</ul>
+			</div>
+		</nav>
+    </header>
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-12 alert alert-info">
+                <h3>Actividades</h3>
+                <p><span class="icon-info-with-circle"></span>Coloca las partes del cuento en orden.</p>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <strong>Actividad Refuerzo</strong>
+                <ol>
+                    <h5 class="text-center">La princesa Lucía</h5>
+                   <p>Había una vez una princesa que se llamaba Lucía, vivía en un palacio con un príncipe que se llamaba Romeo.
+                    <select class="rounded" id="actividad1">
+                        <option value="Desenlace">Desenlace</option>
+                        <option value="Inicio">Inicio</option>
+                        <option value="Nudo">Nudo</option>
+                    </select>
+                    Cuando la princesa fue al jardín se encontró con el príncipe, él llevaba una rosa para ella, se la dio y dijo -¿Quieres pasear conmigo?
+                    Ella le contestó: Claro que sí. Los dos se agarraron de la mano y caminaron por el jardín.
+                    <select class="rounded" id="actividad1B">
+                        <option value="Inicio">Inicio</option>
+                        <option value="Desenlace">Desenlace</option>
+                        <option value="Nudo">Nudo</option>
+                    </select>
+                    El príncipe se puso de rodillas y le propuso matrimonio,
+                    la princesa le dijo que sí.
+            
+                    Llegó el día de la boda y todos los invitados fueron al banquete, comieron una tarta y la abuela le regaló un vestido de color rosa.
+                    <select class="rounded" id="actividad1C">
+                        <option value="Nudo">Nudo</option>
+                        <option value="Inicio">Inicio</option>
+                        <option value="Desenlace">Desenlace</option>
+                    </select>
+                    Vivieron muy felices hasta el día de hoy.
+                    </p>
+               </ol>
+               <img class="w-100 rounded" src="../../Multimedia/ImgU1/princesaLucia.jpg" alt="Imagen no encontrada">
+               <button class="btn btn-info" role="button" onclick="ValidarSelect()">Validar</button>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <strong>Actividad Refuerzo 2</strong>
+                <h5 class="text-center">El león y el mosquito</h5>
+                <ol>
+                    <img class="rounded w-50" src="../../Multimedia/ImgU1/Leon-y-mosquito.jpg" alt="Imagen no encontrada">
+                    <h6 class="icon-info-with-circle"> Escucha el audio y completa los espacios.</h6>
+                    <audio controls src="../../Multimedia/ImgU1/El leon y el mosquito.mp3"></audio>
+                    <p>
+                        Un león descansaba bajo la sombra de un 
+                        <select class="rounded" id="actividad2A">
+                            <option value="grandísimo">grandísimo</option>
+                            <option value="frondoso">frondoso</option>
+                            <option value="maravilloso">maravilloso</option>
+                        </select>
+                        árbol cuando un mosquito pasó zumbando a su alrededor. Enfurecido, el león le dijo al mosquito:
+                        ¿Cómo te atreves a acercarte tanto? Vete, o te destruiré con mis garras.
+                        Sin embargo, el mosquito era muy jactancioso y conocía bien sus propias 
+                        <select class="rounded" id="actividad2B">
+                            <option value="cualidades">cualidades</option>
+                            <option value="capacidad">capacidad</option>
+                            <option value="habilidades">habilidades</option>
+                        </select>
+                        y las ventajas de su diminuto tamaño.
+                        —¡No te tengo miedo! —exclamó el mosquito—. Puedes ser mucho más fuerte que yo, pero tus afilados dientes y garras no me harán el menor daño. Para comprobarlo, te desafío a un combate.
+                        En ese momento, el 
+                        <select class="rounded" id="actividad2C">
+                            <option value="tiburón">tiburón</option>
+                            <option value="mosquito">mosquito</option>
+                            <option value="hombre">hombre</option>
+                        </select>
+                        atacó al león picándolo en la nariz, las orejas y la cola. El león, aún más enfurecido a causa del dolor, intentó atrapar al mosquito, pero terminó lastimándose gravemente con sus garras.
+                        Lleno de
+                        <select class="rounded" id="actividad2D">
+                            <option value="valentia">valentia</option>
+                            <option value="orgullo">orgullo</option>
+                            <option value="temor">temor</option>
+                        </select>
+                        , el mosquito comenzó a volar sin mirar hacia a donde iba. Fue de esta manera que tropezó con una telaraña y quedó atrapado entre los hilos de seda. Entonces, se dijo entre
+                        <select class="rounded" id="actividad2E">
+                            <option value="lamentos">lamentos</option>
+                            <option value="tristezas">tristezas</option>
+                            <option value="alegrías">alegrías</option>
+                        </select>
+                        :
+                        ¿Qué triste es mi final?; vencer al rey de todas las bestias y acabar devorado por una insignificante araña.
+                    </p>
+                    <button class="btn btn-info" role="button" onclick="ValidarSelect2()">Validar</button>
+                    <a class="btn btn-info" role="button" href="../../Vistas/Unidad 1/EvaluacionCuento.html">Evaluación</a>
+                </ol>
+            </div>
+        </div> 
+            
+    </section>
+    <section id="section-auxiliar">
+
+    </section>
+    <footer>
+        <section id="piePagina" class="col-12 text-center">
+			
+		</section>
+    </footer>
+</body>
+</html>

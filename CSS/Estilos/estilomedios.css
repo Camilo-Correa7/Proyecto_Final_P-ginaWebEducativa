@@ -1,0 +1,13 @@
+#cart1,#cart2,#cart3,#cart4{
+    display: none;
+}
+#cart1{
+    display: block;
+    
+}
+.cartas img{
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    width: 25%;
+}

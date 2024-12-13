@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Actividad Evaluativa Sustantivos</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" type="text/css" href="../../CSS/Lib/bootstrap.v.4.6.2.min.css">
+	<link rel="stylesheet" type="text/css" href="../../CSS/Iconos-v1.0/style.css">
+    <link rel="shortcut icon" href="../../Multimedia/Iconos/M.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../..CSS/Estilos/EstilosGenerales.css">
+
+	<script type="text/javascript" src="../../JS/Lib/jqueryv3.5.1.min.js"></script>
+	<script type="text/javascript" src="../../JS/Lib/bootstrap.v.4.6.2.min.js"></script>
+	<script type="text/javascript" src="../../JS/Logica/Unidad2Actividad2.js"></script>
+    <script type="text/javascript" src="../../JS/Logica/navActividades.js"></script>
+	<script type="text/javascript" src="../../JS/Logica/FooterLog.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+            <a class="navbar-brand" href="#">
+                <img src="../../Multimedia/Iconos/Micono2.png" width="30" height="30" class="d-inline-block aling-top" alt="">
+                Aprende con Mambrú
+            </a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul id="navLogica" class="navbar-nav">
+
+				</ul>
+			</div>
+		</nav>
+    </header>
+    <section class="container-fluid">
+		<div class="row">
+			<div class="col-12 alert alert-info">
+				<h3>Actividad Evaluativa</h3>
+				<p><span class="icon-info-with-circle"></span>Actividad Sustantivos <br>Arrastra las imagenes y las palabras que corresponden a sus respectivas cajas</p>
+			</div>
+			<div class="row">
+				<!--p class="col-12">Seccion B</p-->
+				<div class="col-12 row">
+					<div class="col-6 text-justify">
+						<p id="auxPA">Correctas: 0</p>
+					</div>
+					<div class="col-6 text-center">
+						<p id="auxPB">Incorrectas: 0</p>
+					</div>
+				</div>
+				<div class="col-6 text-center alert alert-info">
+					<h2 style="color:blueviolet;">Sustantivos Propios</h2>
+					<div id="SolPA" class="alert alert-primary" style="height: 200px;" ondrop="soltarObjeto(event)"
+						ondragover="mientrasArrastro(event)"></div>
+				</div>
+				<div class="col-6 text-center alert alert-info">
+					<h2 style="color: blue;">Sustantivos comunes</h2>
+					<div id="SolPB" class="alert alert-success" style="height: 200px;" ondrop="soltarObjeto(event)"
+						ondragover="mientrasArrastro(event)"></div>
+				</div>
+				<div class="col-12 alert alert-warning">
+					<div id="listaElement" class="text-center" style="height: 100px;">
+						<p id="arrT01" class="float-left" draggable="true" ondragstart="moverObjeto(event)" style="color:red; font-family:Arial; font-size:20px;">
+							Carlos &nbsp;
+						</p>
+						<p id="arrT02" class="float-left" draggable="true" ondragstart="moverObjeto(event)"  style="color:red; font-family:Arial; font-size:20px;">
+							Gato &nbsp;
+						</p>
+						<p id="arrT03" class="float-left" draggable="true" ondragstart="moverObjeto(event)"  style="color:red; font-family:Arial; font-size:20px;">
+							Lápiz &nbsp;
+						</p>
+                        <p id="arrT10" class="float-left" draggable="true" ondragstart="moverObjeto(event)" style="color: red; font-family:Arial; font-size:20px;">
+                            Fernanda 
+                        </p>
+						<img id="arrT04" class="float-left" src="../../Multimedia/ImgU2/Marter.png"alt="Marte" width="100" draggable="true"ondragstart="moverObjeto(event)">
+						<img id="arrT05" class="float-left" draggable="true" ondragstart="moverObjeto(event)" src="../../Multimedia/ImgU2/París.jpg" alt="París" width="100">
+						<img id="arrT06" class="float-left" draggable="true" ondragstart="moverObjeto(event)" src="../../Multimedia/ImgU2/CR7.jpg" alt="Cristiano Ronaldo" width="100">
+						<img id="arrT07" class="float-left" draggable="true" ondragstart="moverObjeto(event)" src="../../Multimedia/ImgU2/Niño.jpg" alt="Niño" width="100">
+						<img id="arrT08" class="float-left" draggable="true" ondragstart="moverObjeto(event)" src="../../Multimedia/ImgU2/flor.png" alt="Flor" width="100">
+                        <img id="arrT09" class="float-left" draggable="true" ondragstart="moverObjeto(event)" src="../../Multimedia/ImgU2/mesa.jpg" alt="Mesa" width="100" height="100">
+					</div>
+				</div>
+				<div class="col-12 text-center">
+					<button class="btn btn-info" onclick="ValEva()">Evaluación</button>
+				</div>
+			</div>
+		</div>
+	</section>
+    <section id="section-auxiliar">
+
+    </section>
+	<footer>
+		<section id="piePagina" class="col-12 text-center">
+			
+		</section>
+	</footer>
+</body>
+</html>

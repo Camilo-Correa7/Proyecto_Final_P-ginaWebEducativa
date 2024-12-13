@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Medios de Comunicación</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" href="../../CSS/Lib/bootstrap.v.4.6.2.min.css">
+    <link rel="stylesheet" type="text/css" href="../../CSS/Iconos-v1.0/style.css">
+    <link rel="shortcut icon" href="../../Multimedia/Iconos/M.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../../CSS/Estilos/estilomedios.css">
+
+    <script type="text/javascript" src="../../JS/Lib/jqueryv3.5.1.min.js"></script>
+    <script type="text/javascript" src="../../JS/Lib/bootstrap.v.4.6.2.min.js"></script>
+    <script type="text/javascript" src="../../JS/Logica/navActividades.js"></script>
+    <script type="text/javascript" src="../../JS/Logica/FooterLog.js"></script>
+    <script type="text/javascript" src="../../JS/Logica/Medios.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+            <a class="navbar-brand" href="../../Index.html">
+                <img src="../../Multimedia/Iconos/Micono2.png" width="30" height="30" class="d-inline-block aling-top"
+                    alt="">
+                Aprende con Mambrú
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul id="navLogica" class="navbar-nav">
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <!--Carta explicativa-->
+                <div id="cart1" class="alert alert-primary">
+                    <h3>Medios de Comunicación</h3>
+                    <div class="bg-info rounded-circle text-center text-withe w-25">
+                        <p>1</p>
+                    </div>
+                    <div class="rounded border border-dark">
+                        
+                        <p class="text-justify"><strong>¿Qué son los Medios de Comunicación?</strong></p>
+                        Se refiere típicamente a periódicos, revistas, carteleras, radio, televisión y
+                        con las nuevas tecnologías digitales, los medios de comunicación ahora incluyen una serie de
+                        dispositivos y aplicaciones como por ejemplo Youtube Kids, Netflix y Redes Sociales.
+                    </div>
+                    <div class="text-center">
+                        <button id="btnCart1" class="btn btn-info" role="button" onclick="Cartas3()">Siguiente</button>
+                    </div>
+                </div> <!--Fin carta 1-->
+                <!--Inicio Carta 02-->
+                <div id="cart2" class="alert alert-primary">
+                    <h3>Tipos de Medios de Comunicación</h3>
+                    <div class="bg-info rounded-circle text-center text-withe w-25">
+                        <p>2</p>
+                    </div>
+                    <div class="rounded border border-dark">
+                        <p class="text-justify"><strong>Medios Audiovisuales:</strong> Los medios audiovisuales son formas
+                            especiales de comunicación
+                            que nos permiten ver y escuchar cosas al mismo tiempo.</p>
+                        <p><strong>Ejemplos: </strong>Televisión, el cine y el internet.</p>
+                        <p>Estos medios utilizan imágenes y sonidos para
+                            contarnos historias y transmitir información de manera muy realista.</p>
+                    </div>
+                    <div class="text-center">
+                        <button id="btnCart2" class="btn btn-info" role="button" onclick="Cartas3()">Siguiente</button>
+            
+                    </div>
+                </div> <!--Fin Carta 2-->
+                <!--Inicio Carta 3-->
+                <div id="cart3" class="alert alert-primary">
+                    <div class="bg-info rounded-circle text-center text-withe w-25">
+                        <p>3</p>
+                    </div>
+                    <div class="rounded border border-info">
+                        <p class="text-justify"><strong>Medios impresos: </strong>Los medios impresos son formas de comunicación
+                            escrita, con imágenes y producidos por medio de la impresión.</p>
+                        <p><strong>Ejemplos: </strong>La revista, cuadernos de lectura, períodicos, cuentos, diccionarios, etc. </p>
+                    </div>
+                    <div class="text-center">
+                        <button id="btnCart3" class="btn btn-info" role="button" onclick="Cartas3()">Siguiente</button>
+                    </div>
+                </div><!--Fin Carta 3-->
+                <!--Inicio Carta 4-->
+                <div id="cart4" class="alert alert-primary">
+                    <div class="bg-info rounded-circle text-center text-withe w-25">
+                        <p>4</p>
+                    </div>
+                    <div class="rounded border border-info">
+                        <p class="text-justify"><strong>Medios radiofónicos: </strong>Los medios radiofónicos la información se
+                            emite con formato sonoro.</p>
+                        <p><strong>Ejemplos: </strong>La radio y el teléfono. </p>
+                    </div>
+                    <div class="text-center">
+                        <button id="btnCart4" class="btn btn-info" role="button" onclick="Cartas3()">Regresar</button>
+                    </div>
+                </div><!--Fin Carta 4-->
+                <div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4QBRVByX3Kk"
+						title="Titulo del video" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+				</div>
+            </div> 
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <div class="alert alert-success text-center">
+                    <figure class="figure">
+                        <img id="cartasimg" class="figure-img img-fluid w-100" src="../../Multimedia/ImgU3/medios.jpg"
+                            alt="Imagen Medios de Comunicación">
+                        <figcaption class="figure-caption">
+                            <p>Medios de Comunicación</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <a href="../../Vistas/Unidad 3/Actividadmedios.html" class="btn btn-info" role="button"
+                    aria-disabled="true">Actividad</a>
+                    
+            </div>
+        </div>
+    </section>
+    <footer>
+        <section id="piePagina" class="col-12 text-center">
+
+        </section>
+    </footer>
+</body>
+
+</html>

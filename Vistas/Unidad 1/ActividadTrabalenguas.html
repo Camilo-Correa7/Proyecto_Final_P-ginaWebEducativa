@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Actividad-Trabalenguas</title>
+    
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <link rel="stylesheet" type="text/css" href="../../CSS/Lib/bootstrap.v.4.6.2.min.css">
+        <link rel="stylesheet" type="text/css" href="../../CSS/Iconos-v1.0/style.css">
+        <link rel="shortcut icon" href="../../Multimedia/Iconos/M.png" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="../..CSS/Estilos/EstilosGenerales.css">
+    
+        <script type="text/javascript" src="../../JS/Lib/jqueryv3.5.1.min.js"></script>
+        <script type="text/javascript" src="../../JS/Lib/bootstrap.v.4.6.2.min.js"></script>
+        <script type="text/javascript" src="../../JS/Logica/navActividades.js"></script>
+        <script type="text/javascript" src="../../JS/Logica/FooterLog.js"></script>
+        <script type="text/javascript" src="../../JS/Logica/ActTrabalenguas.js"></script>
+    </head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+            <a class="navbar-brand" href="#">
+                <img src="../../Multimedia/Iconos/Micono2.png" width="30" height="30" class="d-inline-block aling-top" alt="">
+                Aprende con Mambrú
+            </a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul id="navLogica" class="navbar-nav">
+
+				</ul>
+			</div>
+		</nav>
+    </header>
+    <section>
+		<div class="border">
+			<div class="row">
+				<div class="col-xl-12 col-lg-12 col-md-12 col-sn-12 col-xs-12">
+					<div class="alert alert-info">
+						<h3>Actividad de Refuerzo</h3>
+                        Actividad 
+				<p><span class="icon-info-with-circle"></span>Selecciona la respuesta correcta</p>
+					</div>
+				</div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="alert alert-success">
+                        Actividad 1
+                        <p>El trabalenguas es
+                            <select class="rounded" id="actividad1A">
+                                <option value="parte">parte</option>
+                                <option value="algo">algo</option>
+                                <option value="un">un</option>
+                            </select>
+                            <select class="rounded" id="actividad1B">
+                                <option value="actividad">actividad</option>
+                                <option value="juego">juego</option>
+                                <option value="pensamiento">pensamiento</option>
+                            </select>
+                            <select class="rounded" id="actividad1C">
+                                <option value="de">de</option>
+                                <option value="del">del</option>
+                                <option value="es">es</option>
+                            </select>
+                            <select class="rounded" id="actividad1D">
+                                <option value="silabas">sílabas</option>
+                                <option value="acento">acento</option>
+                                <option value="palabras">palabras</option>
+                            </select>
+                            <select class="rounded" id="actividad1E">
+                                <option value="complicadas">complicadas</option>
+                                <option value="dificiles">difíciles</option>
+                                <option value="enredadas">enredadas</option>
+                            </select>
+                            <select class="rounded" id="actividad1F">
+                                <option value="del">del</option>
+                                <option value="de">de</option>
+                                <option value="a">a</option>
+                            </select>
+                            <select class="rounded" id="actividad1G">
+                                <option value="comentar">comentar</option>
+                                <option value="hablar">hablar</option>
+                                <option value="decir">decir</option>
+                            </select>
+                        </p>
+                        <button class="btn btn-info regular-button center" role="button" onclick="ValidarSelect()">Validar</button>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="alert alert-success">
+                        <p>Actividad 2</p>
+                        Trabalenguas: "Pedro pica papas con un pico, con un pico pica papas Pedro." ¿Qué está haciendo Pedro en el trabalenguas?
+                        <p><input type="radio" id="preg1A1U3R1" name="pregunta1"><label for="preg1A1U3R1">Comiendo papas.</label></p>
+                        <p><input type="radio" id="preg1A1U3R2" name="pregunta1"><label for="preg1A1U3R2">Picando papas.</label></p>
+                        <p><input type="radio" id="preg1A1U3R3" name="pregunta1"><label for="preg1A1U3R3">Bailando con un pico.</label></p>
+                        <p><input type="radio" id="preg1A1U3R4" name="pregunta1"><label for="preg1A1U3R4">Todos los anteriores</label></p>
+                        <button class="btn btn-info regular-button center" role="button" onclick="ValidarRadio()">Validar</button>
+                        <a class="btn btn-info" role="button" href="#">Evaluación</a>
+                    </div>
+                </div>
+			</div>
+			
+            
+		</div>
+			
+		
+	</section>
+    <section id="section-auxiliar" >
+	</section>
+    <footer>
+        <section id="piePagina" class="col-12 text-center">
+			
+		</section>
+    </footer>
+</body>
+</html>

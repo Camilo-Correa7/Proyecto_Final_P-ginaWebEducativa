@@ -1,0 +1,12 @@
+body{
+    background: rgb(151, 232, 247);
+}
+.w-100{
+    border-radius: 30px;
+}
+#carta01,#carta02,#carta03,#carta04,#carta05,#carta06{
+    display: none;
+}
+#carta01{
+    display: block;
+}
